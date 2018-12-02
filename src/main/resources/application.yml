@@ -1,0 +1,4 @@
+# 기본 환경 선택
+spring:
+  profiles:
+    active: local 

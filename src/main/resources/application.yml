@@ -1,4 +1,22 @@
 # 기본 환경 선택
 spring:
+  application:
+    name: auth-server
   profiles:
     active: local 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auth_test?autoreconnect=true
+    username: root
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+config:
+  oauth2:
+    privateKey: -----BEGIN RSA PRIVATE KEY-----MIIEogIBAAKCAQEAs/DvsdXZqxbw7JS5JX48bHhXwHU0Ii9h+3UNLjtwCOKfWsJKewrE5DoUkfveUaEYOcBO5QO3stQXKkXZewR5sbFJY9oncMHxN3kvw9D7XCpXWGNkXR1ZaN6xLrjZkx1j01yyg286HnMKqxwtLrswLhlM2sRhd1O7fhtfgBhSoZdpoddzNLEZ1vQMnH7e9uZFwWzL7DQZjo1EajgMJymn4CpDRk/wjDSszKMBXuczbkDbRlwETPVJa5C2+WtUz0Iw6Ze+w1TKP5z7GwiHTtWSNe27M9HaWGchs80Qd1kyAeGjiXmsEuW4M0KF0f51QW1FCcUO+sC9njRBJaH7uHopawIDAQABAoIBACDQK/WjCKmBanfJ+yVSKtSg8WegN9yQBW8kfj3TCvAj22liitB7O0JfMQcaBgWeuds2LWzny6Tptju4NxuOyl5T9Q0naA/Q3hr+l24++sdo1TrCDThJtNdB3M+nV83TCzQs8ES1kMSit+xSHA8shXGynWg7bYakF0m81iJ2zQK4Wi43rUEffukD4XWkEpVVAXoQOUYghtALwblRBI3n7o4MwDMjQbWl3ugB4b93ow34OSHt9eTxlUg77DqSPnVMSK0Yev/3lA/umDQv0GAo9rluKCsyvLZ3UU9kPzQEuA1ynI4CD/wNDGk+wMOHgFd0nGFfgaq7yZz/LKrUtvddKtkCgYEA6n4EGb7sTIIEruh4FzxkWtEOSLdzeOQx4KusCw1LISsWpCKvHNF7ouI2HOQkvlOhoFQQ5AltxgXgONXB8OXC02aJBP6PECD4rgJyfUQVhonsWkzYVfzaBMytUPMsTWhjg9rDFHTs0/QQ+8N7gilwxejm4emm/FQjAq14gDJVbmcCgYEAxHIJNnD50V6OtIgwKQ5V/N3eN1N5YiA5NPssXPn8E7iKTxeO/J+tZTa7FWsoMe/ROWagujIaoGIsCbpjxaTDgWI3UOd7rLiDyA5eNF673vrLK8rfYrOBHz5x11+XHgD2W9GdrhXHL3htJzcOMAPv/YhrH8JkDm4lAE5co8Whwl0CgYBVu5cSNqy8WDkQHexySmFClvaK/Y+ZXo0h4II5VDXovZE8l3XAqpJyfhRcwcjxUTBhpvq59PyOju1oujZ7NfXiRrXH/q4droBdVoW3aOIZ22lvpnLeFWE8qfygARhsgMMJnTz/yLQh1jUzZ0hL0YzqvvlTFZM45CYcv4G0FTMI9wKBgBSRlCFdJusjKXIBqHlEBQDbAj9swBLkKNlBS13Y1uoBsomhf9k3puIoHuKZO7Yu1AtckYutX1hXryC9oWC6ZbYQYJZaBnsJPtMdngOBv84TGF7XeRhOj0CEO0s/uQTtON5YTlhB838m7tbiTtv8LY6wT/cdVXilU756dfy33r4JAoGAHYcz2FlYagfrh2PmQdUrhDkUvrGC6sIb+5OjJwPo5mImDiyzXJmtkPT/QT4udshO7Rfrzi6yxJ/FbUUBdHxoSIOQpmkQzsg21QTUsid+keRjcPveK1ldUm3FnZQoXGaWY3NQH3Mh5csRs/X9yYWuzZ932kI4ingE8KLZagi/1QA=-----END RSA PRIVATE KEY-----
+    publicKey: -----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs/DvsdXZqxbw7JS5JX48bHhXwHU0Ii9h+3UNLjtwCOKfWsJKewrE5DoUkfveUaEYOcBO5QO3stQXKkXZewR5sbFJY9oncMHxN3kvw9D7XCpXWGNkXR1ZaN6xLrjZkx1j01yyg286HnMKqxwtLrswLhlM2sRhd1O7fhtfgBhSoZdpoddzNLEZ1vQMnH7e9uZFwWzL7DQZjo1EajgMJymn4CpDRk/wjDSszKMBXuczbkDbRlwETPVJa5C2+WtUz0Iw6Ze+w1TKP5z7GwiHTtWSNe27M9HaWGchs80Qd1kyAeGjiXmsEuW4M0KF0f51QW1FCcUO+sC9njRBJaH7uHopawIDAQAB-----END PUBLIC KEY-----
+    clientId: newpl
+    clientSecret: sbvmf!1
